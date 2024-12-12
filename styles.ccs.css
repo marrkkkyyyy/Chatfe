@@ -1,0 +1,397 @@
+::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 100px;
+    background-color: blanchedalmond;
+}
+
+/*Menu*/
+.nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.nav .logo h1{
+    font-weight: 1000;
+    font-family: monospace;
+    font-size: 50px;
+    color: dimgray;
+}
+.nav .logo b{
+    color: goldenrod;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 50px;
+    font-family: monospace;
+    font-size: 20px
+}
+
+/*home*/
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 10px;
+    background-color: chocolate;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+/*input mo 'yung password, at email*/
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.signin{
+    background: transparent;
+    border: none;
+}
+
+.signup{
+    background-color: coral;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/*section na omg*/
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*content text sa left side*/
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+.content .content-left .info h2 a{
+    color: dimgray;
+}
+
+.content .content-left .info h2 b{
+    color: goldenrod;
+}
+
+
+.content .content-left .info p{
+    font-size: 25px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: Georgia;
+}
+
+/*content left button*/
+
+.content .content-left button{
+    padding: 10px 20px;
+    background-color:coral;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/*content image rigt side*/
+
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+
+/*animationnnn*/
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+/*category card*/
+    
+}
+.category {
+    padding: 50px 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.category h2{
+    font-size: 30px;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+.category a{
+    color: dimgray;
+    font-size: larger;
+}
+
+.category b{
+    color: goldenrod;
+    font-size: larger;
+}
+
+.category .light-bg {
+    background-color: white;
+}
+
+.category .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.category .menu-item {
+    background: beige;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(114, 9, 9, 0.1);
+    padding: 20px;
+}
+
+.category .menu-item{
+    font-family: Georgia;
+}
+
+.category .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category .about-img {
+    margin-top: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/*table*/
+.table h2{
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table h2 a{
+    color: dimgray;
+}
+
+.table h2 b{
+    color: goldenrod;
+    font-size: larger;
+}
+
+table {
+    margin: 0 auto;
+    width: 90%;
+    line-height: 50px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 10px 20px;
+    text-align: center;
+    font-family: monospace;
+}
+
+table th {
+    background-color: #ff7f50;
+    color: white;
+}
+
+table td {
+    border: 4px solid #ddd;
+}
+
+/*audio track*/
+.track {
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.track {
+    margin: 0 auto;
+    width: 50%;
+    line-height: 5px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.track {
+    margin: 40px auto;
+    padding: 10px 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px burlywood;
+}
+
+.meowss h2 {
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.meowss h2 a{
+    color: dimgray;
+    font-size: larger;
+}
+
+.meowss h2 b{
+    color: goldenrod;
+}
+
+.track p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: brown;
+}
+
+  audio {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*about us*/
+.section {
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.section h2{
+    font-size: 50px;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section h2 a{
+    color: dimgray;
+    font-size: larger;
+}
+
+.section h2 b{
+    color: goldenrod;
+}
+
+.section p{
+    font-family: Georgia;
+    font-style: inherit;
+}
+
+.section ul{
+    font-family: Georgia;
+}
+
+.section ul{
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.section ul{
+    font-family: Georgia;
+    font-size: medium;
+}
+
+.section ul pre{
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.section ul pre{
+    font-family: Georgia;
+    font-size: medium;
+}
+
+/*contact*/
+.section{
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.section{
+    font-size: large;
+}
+
+.section h2{
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section ol{
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.section ol{
+    font-family: Georgia;
+    font-size: medium;
+}
+
+/* Footer */
+footer {
+    background-color: #ffdab9;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
