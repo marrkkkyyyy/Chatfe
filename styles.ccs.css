@@ -266,7 +266,7 @@ table td {
 .track {
     margin: 0 auto;
     width: 50%;
-    line-height: 5px;
+    line-height: 20px;
     border-collapse: collapse;
     background-color: #fff;
 }
@@ -292,6 +292,14 @@ table td {
 
 .meowss h2 b{
     color: goldenrod;
+}
+
+.track a{
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: brown;
+
 }
 
 .track p {
